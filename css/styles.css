@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Variables */
 
 :root {
@@ -22,7 +26,7 @@
 @media screen and (max-width: 768px) {
   :root {
     --heading-one-size: 2rem;
-    --heading-two-size: 1.89rem;
+    --heading-two-size: 1.7rem;
     --heading-three-size: 1.6rem;
   }
 }
@@ -32,6 +36,8 @@
 body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 h1,
@@ -63,8 +69,10 @@ p {
   width: 49%;
   border: 0;
   border-radius: 5px;
-  height: 31px;
-  padding: 0.3rem;
+  height: 34px;
+  padding: 0.6rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -73,6 +81,88 @@ p {
 }
 
 .btn--secondary {
-  color: var(--accent-color);
   background-color: white;
+  color: var(--accent-color);
+}
+
+/* Cards */
+
+.card-grid {
+  display: grid;
+}
+
+.card {
+  margin: -1rem;
+  padding: 1.5rem 1rem;
+}
+
+/* Card One */
+.card-one {
+  background-color: var(--primary-color);
+}
+
+.card-one img {
+  width: 100%;
+  margin-bottom: 1.3rem;
+}
+
+/* Card Two */
+
+.card-two {
+  background-color: white;
+  margin-bottom: 0.4rem;
+}
+
+.card-two h2 {
+  margin-top: 0.1rem;
+}
+
+.card-two img {
+  width: 34px;
+}
+
+/* Card Three */
+
+.card-three {
+  background-color: var(--secondary-color);
+}
+
+.card-three .tagline {
+  color: var(--accent-color);
+  opacity: 70%;
+  margin: 0;
+  position: relative;
+  left: 0.1rem;
+  top: 0.5rem;
+  font-size: calc(var(--paragraph-font-size) - 0.17rem);
+}
+
+.card-three h2 {
+  margin: 0;
+}
+
+.card-three .btn {
+  margin-bottom: 0.5rem;
+}
+
+/* Card Four */
+
+.card-four {
+  padding-bottom: 0.5rem;
+}
+
+.card-four .arrow-tagline {
+  color: var(--accent-color);
+  opacity: 70%;
+  font-weight: 600;
+}
+
+.card-four p i {
+  position: relative;
+  top: 0.1rem;
+  transition: transform 0.5s;
+}
+
+.card-four .arrow-tagline:hover i {
+  transform: translate(0.2rem);
 }
