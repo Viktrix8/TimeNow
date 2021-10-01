@@ -11,7 +11,7 @@
 :root {
   --primary-color: #48cae4;
   --secondary-color: #caf0f8;
-  --accent-color: #023e8a;
+  --accent-color: #03045e;
   --background-color: #fff;
   --heading-one-size: 1.802rem;
   --heading-two-size: 1.602rem;
@@ -55,4 +55,24 @@ h3 {
 
 p {
   font-size: var(--paragraph-font-size);
+}
+
+/* Buttons */
+
+.btn {
+  width: 49%;
+  border: 0;
+  border-radius: 5px;
+  height: 31px;
+  padding: 0.3rem;
+}
+
+.btn--primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn--secondary {
+  color: var(--accent-color);
+  background-color: white;
 }
