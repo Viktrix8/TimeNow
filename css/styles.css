@@ -38,6 +38,7 @@ body {
   line-height: 1.5;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-top: 1rem;
 }
 
 h1,
@@ -69,8 +70,9 @@ p {
   width: 49%;
   border: 0;
   border-radius: 5px;
-  height: 34px;
-  padding: 0.6rem;
+  height: 40px;
+  padding: 0.3rem;
+  font-size: 0.7rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -165,4 +167,43 @@ p {
 
 .card-four .arrow-tagline:hover i {
   transform: translate(0.2rem);
+}
+
+/* Header */
+
+.header__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__heading {
+  margin-bottom: 0.5rem;
+}
+
+.header__text {
+  margin-top: 0;
+}
+
+.header__security {
+  margin-top: 1rem;
+}
+
+.security__tagline {
+  display: inline;
+  font-size: 0.7rem;
+}
+
+.security__link {
+  display: block;
+  color: var(--accent-color);
+  font-weight: 600;
+  position: relative;
+  left: 1.9rem;
+  font-size: 0.7rem;
+}
+
+.security__image {
+  position: relative;
+  top: 0.6rem;
+  margin-right: 0.5rem;
 }
