@@ -19,7 +19,7 @@ html {
   --background-color: #fff;
   --heading-one-size: 1.802rem;
   --heading-two-size: 1.602rem;
-  --heading-three-size: 1.424rem;
+  --heading-three-size: 1rem;
   --paragraph-font-size: 1rem;
 }
 
@@ -27,7 +27,7 @@ html {
   :root {
     --heading-one-size: 2rem;
     --heading-two-size: 1.7rem;
-    --heading-three-size: 1.6rem;
+    --heading-three-size: 1.3rem;
   }
 }
 
@@ -206,4 +206,49 @@ p {
   position: relative;
   top: 0.6rem;
   margin-right: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  margin: -1rem;
+  padding: 1rem;
+}
+
+.footer-grid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: start;
+  align-items: start;
+  gap: 1rem;
+}
+
+.footer__list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .input-label {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.footer input {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+}
+
+.footer .btn {
+  position: relative;
+  top: -2.391rem;
+  left: 50%;
+  height: 37.1px;
+}
+
+.footer .input-trick {
+  position: absolute;
+  width: 49%;
 }
